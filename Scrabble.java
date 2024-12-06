@@ -48,7 +48,7 @@
 	}
 
 	// Checks if the given word is in the dictionary.
-	private static boolean isWordInDictionary(String word) {
+	public static boolean isWordInDictionary(String word) {
 		for(int i = 0; i <= NUM_OF_WORDS; i++){
 			if(word.equals(DICTIONARY[i])){
 				return true;
