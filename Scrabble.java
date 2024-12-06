@@ -66,6 +66,7 @@
 		for(int i = 0; i < word.length(); i++){
 			sum += SCRABBLE_LETTER_VALUES[word.charAt(i)-'a'];
 		}
+		sum = sum * word.length();
 		if(word.length() == HAND_SIZE) sum += 50;
 		if(MyString.subsetOf("runi", word)) sum += 1000;
 		return sum;
