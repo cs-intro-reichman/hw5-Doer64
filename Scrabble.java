@@ -111,6 +111,7 @@
 				score += wordScore(input);
 				System.out.println("Score: " + score + " points");
 				hand = MyString.remove(hand, input);
+				System.out.println();	//space line
 			}
 		}
 		if (hand.length() == 0) {
